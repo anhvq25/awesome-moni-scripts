@@ -52,11 +52,7 @@ engine that supports JS scripting. The easiest one we've found:
 > live. It's just a suggestion — any tool implementing the same API works — but
 > it's what these snippets are tested against.
 
-| Platform | Get it |
-|---|---|
-| 🍎 iOS | _App Store link — add yours_ |
-| 🤖 Android | _Play Store link — add yours_ |
-| 💻 macOS | _Download link — add yours_ |
+👉 **Get it for iOS, Android & macOS: [moniproxy.com](https://moniproxy.com/)**
 
 **Steps:**
 1. Install the proxy engine and trust its CA certificate (in-app guide).

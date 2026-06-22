@@ -80,6 +80,17 @@ Every script is a single `.js` file with inline comments. Copy → paste → run
 
 ---
 
+## 🎓 Demo — debug your own app
+
+New to interceptor scripts? Start with the fully-commented examples in
+[`scripts/demo`](scripts/demo), then see the companion repo for debugging
+**apps you build yourself** (inspect requests, mock your own API, force UI
+states while developing):
+
+👉 **[ios-script-proxy](https://github.com/anhvq25/ios-script-proxy)**
+
+---
+
 ## ✨ The scripting API (cheat-sheet)
 
 ```js

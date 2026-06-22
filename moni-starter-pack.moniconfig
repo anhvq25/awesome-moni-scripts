@@ -1,0 +1,35 @@
+{
+  "moniconfig": 1,
+  "app": "Moni Proxy",
+  "exportedAt": "2026-06-22T09:00:00.000Z",
+  "name": "Awesome Moni Scripts — Starter Pack",
+  "rules": {
+    "scripts": [
+      {
+        "enabled": true,
+        "name": "Block ad/tracker hosts",
+        "url": "*",
+        "scriptPath": "/scripts/block-ad-hosts.js",
+        "code": "const AD_HOSTS = ['doubleclick.net','googlesyndication.com','googleadservices.com','google-analytics.com','app-measurement.com','ads.tiktok.com','analytics.tiktok.com','unityads.unity3d.com','applovin.com','adcolony.com','mopub.com','amplitude.com','mixpanel.com'];\nasync function onRequest(context, request) {\n  const url = request.url || '';\n  for (const host of AD_HOSTS) {\n    if (new RegExp(host).test(url)) { console.log('[adblock] blocked ' + url); return null; }\n  }\n  return request;\n}"
+      },
+      {
+        "enabled": true,
+        "name": "Strip tracking params",
+        "url": "*",
+        "scriptPath": "/scripts/strip-tracking-params.js",
+        "code": "const STRIP=['utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid','gclid','msclkid','igshid'];\nasync function onRequest(context, request) {\n  try {\n    const u = new URL(request.url); let changed=false;\n    for (const p of STRIP) { if (u.searchParams.has(p)) { u.searchParams.delete(p); changed=true; } }\n    if (changed) { request.url = u.toString(); console.log('[rewrite] cleaned ' + request.url); }\n  } catch (e) {}\n  return request;\n}"
+      },
+      {
+        "enabled": false,
+        "name": "Pretty-print JSON responses",
+        "url": "https://your-api.example.com/*",
+        "scriptPath": "/scripts/pretty-print-json.js",
+        "code": "async function onResponse(context, request, response) {\n  const ct = (response.headers && (response.headers['content-type'] || response.headers['Content-Type'])) || '';\n  if (ct.includes('json') && response.body) {\n    try { const obj = JSON.parse(response.body); console.log('[inspect] ' + request.url + '\\n' + JSON.stringify(obj, null, 2)); } catch (e) {}\n  }\n  return response;\n}"
+      }
+    ],
+    "blocks": [
+      { "enabled": true, "url": "https://.*doubleclick\\.net/.*", "type": "blockRequest" },
+      { "enabled": true, "url": "https://.*googlesyndication\\.com/.*", "type": "blockRequest" }
+    ]
+  }
+}

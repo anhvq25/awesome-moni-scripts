@@ -74,6 +74,7 @@ engine that supports JS scripting. The easiest one we've found:
 | 🔓 **Decrypt / inspect** | Pretty-print JSON, decode JWT, dump bodies to the console | [`scripts/decrypt`](scripts/decrypt) |
 | 🎨 **UI tweaks** | Edit the response your own client renders (themes, flags, copy) | [`scripts/ui-tweaks`](scripts/ui-tweaks) |
 | 🧰 **Utility** | Latency simulation, force JSON, custom User-Agent, A/B flags | [`scripts/utility`](scripts/utility) |
+| 🎓 **Demo / learn** | Fully-commented examples of the core techniques: strip cache headers, parse→edit→re-stringify a JSON body, return a full mock response | [`scripts/demo`](scripts/demo) |
 
 Every script is a single `.js` file with inline comments. Copy → paste → run.
 

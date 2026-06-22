@@ -68,7 +68,7 @@ engine that supports JS scripting. The easiest one we've found:
 
 | Pack | What it does | Folder |
 |---|---|---|
-| 🚫 **Ad-block** | Remove banner/interstitial ads & analytics beacons in apps | [`scripts/adblock`](scripts/adblock) |
+| 🚫 **Ad-block** | Remove banner/interstitial ads & analytics beacons — incl. a 🇻🇳 Vietnam pack + auto-updating [hostsVN](https://github.com/bigdargon/hostsVN) feed | [`scripts/adblock`](scripts/adblock) |
 | 🧪 **Mock API** | Return fake/canned JSON so you can build a UI before the backend exists | [`scripts/mock`](scripts/mock) |
 | ✂️ **Rewrite** | Strip tracking query params, swap headers, redirect hosts | [`scripts/rewrite`](scripts/rewrite) |
 | 🔓 **Decrypt / inspect** | Pretty-print JSON, decode JWT, dump bodies to the console | [`scripts/decrypt`](scripts/decrypt) |
@@ -127,6 +127,16 @@ PRs welcome! Add a `.js` file to the right folder with:
 2. Only the legitimate use-cases described in the [disclaimer](#-disclaimer).
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+
+## 🙏 Credits
+
+- 🇻🇳 The Vietnam ad-block scripts ([`block-vietnam-ads.js`](scripts/adblock/block-vietnam-ads.js),
+  [`hostsvn-remote-blocklist.js`](scripts/adblock/hostsvn-remote-blocklist.js))
+  use domains from the excellent community project
+  **[hostsVN](https://github.com/bigdargon/hostsVN)** by
+  [bigdargon](https://github.com/bigdargon). Go ⭐ it.
 
 ---
 

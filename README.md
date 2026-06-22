@@ -152,6 +152,30 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
+## 📖 Mục đích / Purpose
+
+> **Tài liệu học tập, demo và tham khảo.** Repo này được cung cấp **chỉ cho mục
+> đích học tập, minh hoạ kỹ thuật và tham khảo** — để hiểu cách interceptor
+> `onRequest`/`onResponse` hoạt động trên **traffic và thiết bị của chính bạn**.
+>
+> Learning, demo and reference material only.
+
+## 🚫 Nghiêm cấm / Prohibited use
+
+**NGHIÊM CẤM** dùng bất kỳ script nào ở đây để:
+
+- ❌ Hack, crack, trick, can thiệp trái phép vào app/dịch vụ **không thuộc sở
+  hữu của bạn**.
+- ❌ Qua mặt thanh toán, mở khoá tính năng trả phí, giả mạo subscription /
+  entitlement / số dư của bên thứ ba.
+- ❌ Giả mạo dữ liệu, vượt xác thực, hay tấn công/scrape/làm gián đoạn dịch vụ
+  mà không được phép.
+
+Strictly **prohibited**: hacking, tricking, bypassing payments/licensing,
+forging data, or tampering with services you do **not** own.
+
+---
+
 ## ⚖️ Disclaimer
 
 These scripts are provided for **educational, debugging, ad-blocking and

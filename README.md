@@ -100,6 +100,11 @@ async function onResponse(context, request, response) {
 - `console.log(...)` prints to the proxy's log console.
 - You can `await fetch(...)` inside a script to call other APIs.
 
+📖 **Want to write your own? Read the full guide:
+[docs/WRITING-SCRIPTS.md](docs/WRITING-SCRIPTS.md)** — every field on
+`request` / `response` / `context`, session state, blocking, URL matching,
+recipes and gotchas.
+
 ---
 
 ## 🌟 Unlock more packs

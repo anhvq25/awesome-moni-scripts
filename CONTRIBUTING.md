@@ -12,7 +12,8 @@ Thanks for helping grow the collection! 🎉
    // One line: what it does.
    // URL pattern: https://example.com/*   <- where to apply it
    ```
-3. Use the standard interceptor API:
+3. Use the standard interceptor API (full reference:
+   [docs/WRITING-SCRIPTS.md](docs/WRITING-SCRIPTS.md)):
    ```js
    async function onRequest(context, request) { return request; }
    async function onResponse(context, request, response) { return response; }
